@@ -1,16 +1,50 @@
-# Compiled class file
-*.class
+# Maven build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# Log file
+# Build outputs
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Logs and runtime artifacts
 *.log
+*.pid
+hs_err_pid*.log
 
-# BlueJ files
-*.ctxt
+# IDE configs
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+### Eclipse/STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Package Files #
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,6 +53,5 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# CI/CD configs (optional)
+.qodana.yaml
